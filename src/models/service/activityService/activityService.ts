@@ -51,4 +51,8 @@ export class ActivityService {
             return activity.id === activityId;
         });
     }
+
+    public getRandomActivity(): ActivityModel {
+        return this.activities[Math.floor(Math.random() * this.activities.length)];
+    }
 }
