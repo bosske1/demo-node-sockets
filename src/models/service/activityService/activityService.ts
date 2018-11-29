@@ -8,8 +8,8 @@ export class ActivityService {
             createdDate: new Date(),
             user: {
                 id: 1,
-                username: 'user1',
-                avatar: 'https://placeimg.com/100/100/people'
+                userName: 'user1',
+                profileImgUrl: 'https://placeimg.com/100/100/people'
             },
             seen: false
         },
@@ -19,8 +19,8 @@ export class ActivityService {
             createdDate: new Date(),
             user: {
                 id: 2,
-                username: 'user2',
-                avatar: 'https://placeimg.com/100/100/people'
+                userName: 'user2',
+                profileImgUrl: 'https://placeimg.com/100/100/people'
             },
             seen: true
         },
@@ -30,8 +30,8 @@ export class ActivityService {
             createdDate: new Date(),
             user: {
                 id: 1,
-                username: 'user1',
-                avatar: 'https://placeimg.com/100/100/people'
+                userName: 'user1',
+                profileImgUrl: 'https://placeimg.com/100/100/people'
             },
             seen: true
         }

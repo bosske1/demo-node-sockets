@@ -1,5 +1,5 @@
 export class UserModel {
     public id: number;
-    public username: string;
-    public avatar: string;
+    public userName: string;
+    public profileImgUrl: string;
 }
