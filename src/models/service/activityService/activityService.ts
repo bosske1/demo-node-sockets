@@ -9,7 +9,7 @@ export class ActivityService {
             user: {
                 id: 1,
                 username: 'user1',
-                avatar: 'https://somepic.somewhere'
+                avatar: 'https://placeimg.com/100/100/people'
             },
             seen: false
         },
@@ -20,7 +20,7 @@ export class ActivityService {
             user: {
                 id: 2,
                 username: 'user2',
-                avatar: 'https://somepic.somewhere'
+                avatar: 'https://placeimg.com/100/100/people'
             },
             seen: true
         },
@@ -31,7 +31,7 @@ export class ActivityService {
             user: {
                 id: 1,
                 username: 'user1',
-                avatar: 'https://somepic.somewhere'
+                avatar: 'https://placeimg.com/100/100/people'
             },
             seen: true
         }

@@ -1,7 +1,7 @@
 import app from "./app";
 import {ActivityService} from "./models/service/activityService/activityService";
 
-const PORT = 3000;
+const PORT = 3001;
 
 let activitiesService = new ActivityService();
 
