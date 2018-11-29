@@ -10,9 +10,14 @@ let http = app.listen(PORT, () => {
 });
 
 let io = require('socket.io')(http);
+io.set('origins', 'http://localhost:3000');
 
 io.on('connection', function(socket: any) {
     console.log('User connected');
+});
+
+io.on('disconnect', function(socket: any) {
+    console.log('User disconnected');
 });
 
 io.on('activities', function(socket: any) {
