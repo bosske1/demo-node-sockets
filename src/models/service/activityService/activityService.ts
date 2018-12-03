@@ -1,10 +1,11 @@
-import {ActivityModel} from "../../activityModel";
+import {ActivityModel, ActivityType} from "../../activityModel";
 
 export class ActivityService {
-    private activities = [
+    private activities: ActivityModel[] = [
         {
             id: 1,
             name: 'Activity1',
+            type: ActivityType.UPLOAD_PICTURE,
             createdDate: new Date(),
             user: {
                 id: 1,
@@ -16,6 +17,7 @@ export class ActivityService {
         {
             id: 2,
             name: 'Activity2',
+            type: ActivityType.UPLOAD_PICTURE,
             createdDate: new Date(),
             user: {
                 id: 2,
@@ -27,6 +29,7 @@ export class ActivityService {
         {
             id: 3,
             name: 'Activity3',
+            type: ActivityType.UPLOAD_VIDEO,
             createdDate: new Date(),
             user: {
                 id: 1,
