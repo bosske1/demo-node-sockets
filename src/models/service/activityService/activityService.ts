@@ -7,6 +7,9 @@ export class ActivityService {
             name: 'Activity1',
             type: ActivityType.UPLOAD_PICTURE,
             createdDate: new Date(),
+            params: {
+                route: 'test1'
+            },
             user: {
                 id: 1,
                 userName: 'user1',
@@ -19,6 +22,9 @@ export class ActivityService {
             name: 'Activity2',
             type: ActivityType.UPLOAD_PICTURE,
             createdDate: new Date(),
+            params: {
+                route: 'test2'
+            },
             user: {
                 id: 2,
                 userName: 'user2',
@@ -31,6 +37,9 @@ export class ActivityService {
             name: 'Activity3',
             type: ActivityType.UPLOAD_VIDEO,
             createdDate: new Date(),
+            params: {
+                route: 'test3'
+            },
             user: {
                 id: 1,
                 userName: 'user1',

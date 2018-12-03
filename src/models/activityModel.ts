@@ -15,6 +15,7 @@ export class ActivityModel {
     public name: string;
     public type: ActivityType;
     public user: UserModel;
+    public params: { route?: string };
     public createdDate: Date;
     public viewed: boolean;
 }
