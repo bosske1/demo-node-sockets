@@ -11,7 +11,7 @@ export class ActivityService {
                 userName: 'user1',
                 profileImgUrl: 'https://placeimg.com/100/100/people'
             },
-            seen: false
+            viewed: false
         },
         {
             id: 2,
@@ -22,7 +22,7 @@ export class ActivityService {
                 userName: 'user2',
                 profileImgUrl: 'https://placeimg.com/100/100/people'
             },
-            seen: true
+            viewed: true
         },
         {
             id: 3,
@@ -33,7 +33,7 @@ export class ActivityService {
                 userName: 'user1',
                 profileImgUrl: 'https://placeimg.com/100/100/people'
             },
-            seen: true
+            viewed: true
         }
     ];
 

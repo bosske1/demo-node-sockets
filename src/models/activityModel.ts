@@ -5,5 +5,5 @@ export class ActivityModel {
     public name: string;
     public user: UserModel;
     public createdDate: Date;
-    public seen: boolean;
+    public viewed: boolean;
 }
