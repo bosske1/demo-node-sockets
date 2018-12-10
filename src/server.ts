@@ -9,8 +9,7 @@ let http = app.listen(PORT, () => {
     console.log('Express server listening on port ' + PORT);
 });
 
-let io = require('socket.io')(http);
-io.set('origins', 'http://localhost:3000');
+let io = require('socket.io')(http, {origins:'http://localhost:3000'});
 
 io.on('connection', function(socket: any) {
     console.log('User connected');
