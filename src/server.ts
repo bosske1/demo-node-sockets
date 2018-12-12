@@ -11,8 +11,17 @@ let http = app.listen(PORT, () => {
 
 let io = require('socket.io')(http, {origins:'http://localhost:3000'});
 
+let room = '';
+
 io.on('connection', function(socket: any) {
-    console.log('User connected');
+    socket.on('room', function(aRoom) {
+        room = aRoom;
+        socket.join(aRoom);
+    });
+});
+
+io.on('message', function(data) {
+    console.log('Incoming message:', data);
 });
 
 io.on('disconnect', function(socket: any) {
@@ -24,8 +33,8 @@ io.on('activities', function(socket: any) {
 });
 
 function sendActivities() {
-    console.log('activity emited');
-    io.emit('activityHappened', {type: 'new-activity', content: activitiesService.getRandomActivity()});
+    console.log('activity emited to room ' + room);
+    io.to(room).emit('activityHappened', {type: 'new-activity', content: activitiesService.getRandomActivity()});
 }
 
 setInterval(sendActivities, 3000);
